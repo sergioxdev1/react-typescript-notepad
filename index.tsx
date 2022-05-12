@@ -12,7 +12,7 @@ class App extends Component<AppProps, AppState> {
   constructor(props) {
     super(props);
     this.state = {
-      name: 'Im a State',
+      name: 'Your name',
     };
   }
 
@@ -20,7 +20,10 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
-        <p>My first project working with Typescript on React</p>
+        <p>Very Simple Notepad</p>
+        <form>
+          <textarea rows="25" cols="50" name="description"></textarea>
+        </form>
       </div>
     );
   }
